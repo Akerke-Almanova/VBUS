@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live 3X3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/7-live-gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./img/vbusLogo.svg" alt="logo">
+        </a>
+        <li class="nav-item">
+            <a data-bs-toggle="modal" data-bs-target="#notification" class="nav-link alert" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Уведомления
+                <img class="ellipse" src="./img/ellipse.svg" alt="ellipse">
+            </a>
+            
+        </li>
+        <li class="nav-item">
+            <a class="nav-link exit" href="#">Выйти</a>
+        </li>
+    </div>
+</nav>
+
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a class="breadcrumb-text" href="#">Видеосерверы</a></li>
+      <li class="breadcrumb-item active" aria-current="page"> <a class="breadcrumb-info" href="#"> Видеосервер 1</a></li>
+    </ol>
+  </nav>
+
+  <ul class="nav live-event">
+    <li class="nav-item">
+        <h5 class="live">
+      <a class="nav-link active" aria-current="page" href="#">Live</a></h5>
+    </li>
+    <li class="nav-item">
+        <h5>
+      <a class="nav-link event" href="#">События</a></h5>
+    </li>
+    
+  </ul>
+  <div class="line"></div>
+  
+
+<div class="input_button">
+    <input type="text" placeholder="Поиск по названию" class="client_poisk_videoserver">
+    <button type="submit" class="client_sozdanie_videoserver" data-bs-toggle="modal" data-bs-target="#exampleModal">Создать камеру</button>
+</div>
+<div class="arrow_menu">
+    <a href="#"><img src="./img/Frame 3X3.svg" alt="frame"></a>
+    <a href="#">
+    <img src="./img/Arrow - Right gray.svg" alt="arrow"></a>
+    <a href="#"><img src="./img/Arrow - Right 5.svg" alt="arrow"></a>
+</div>
+
+
+<div class="live-images">
+<p class="block">Камера №3 <br>Видеосервер: видеосервер 5 <br> Плагины: Face detection</p>
+<img src="./img/image 14.svg" alt="image" width="410px" height="257px">
+<img src="./img/image 23.svg" alt="image" width="410px" height="257px">
+<img src="./img/image 24.svg" alt="image">
+</div>
+
+<div class="live-images">
+<img src="./img/image 14.svg" alt="image" width="410px" height="257px">
+<img src="./img/image 23.svg" alt="image" width="410px" height="257px">
+<img src="./img/image 24.svg" alt="image">
+</div>
+
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- MODALS -->
+
+
+<div class="modal fade" id="redaktirovanieKlienta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Редактирование видеосервера</label>
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Название видеосервера">
+                    </div>
+                    </form>
+                <img src="./img/close-icon-blue.svg" alt="close" class="btn-close" data-bs-dismiss="modal">
+                <button type="button" class="btn btn-primary blue" data-bs-dismiss="modal">Изменить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="udalenie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="./img/close-icon-blue.svg" alt="close" class="btn-close" data-bs-dismiss="modal">
+                <p>Удаление видеосервера приведет к удалению всех видео в этом сервере. Вы уверены что хотите удалить клиента “Видеосервер 2”?</p>
+                <button type="button" class="btn btn-outline-danger btn-cancel" data-bs-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Удалить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODALS CREATE A VIDEO SERVER -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+        <img src="./img/close-icon-blue.svg" alt="close" data-bs-dismiss="modal">
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+
+                    <label for="recipient-name" class="col-form-label">Создание камеры</label>
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Название камеры">
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Выберите пакет услуг">
+                    <input type="text" class="form-control" id="recipient-name" placeholder="URL">
+                </div>
+                </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary blue">Создать</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>

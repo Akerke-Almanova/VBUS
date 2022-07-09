@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навигация</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/2-nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./img/vbusLogo.svg" alt="logo">
+        </a>
+        <li class="nav-item">
+            <a data-bs-toggle="modal" data-bs-target="#notification" class="nav-link alert" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Уведомления
+                <img class="ellipse" src="./img/ellipse.svg" alt="ellipse">
+            </a>
+            
+        </li>
+        <li class="nav-item">
+            <a class="nav-link exit" href="1-index.html">Выйти</a>
+        </li>
+    </div>
+</nav>
+
+<hr>
+
+<main>
+
+<div class="cardOne">
+    <img class="navIcon" src="./img/icon_navigation.svg" alt="userIcon">
+    <p class="navText">
+        Партнер 1</p>
+    
+    <div class="navData">
+        <p>Клиенты</p>
+        <p class="navNumber">5</p>
+        <img class="navPic" src="./img/navIcon1.svg" alt="icon">
+    </div>
+
+    <div class="navCamera">
+        <p>Камеры</p>
+        <p class="navNumber">63</p>
+        <img class="navPic" src="./img/navIcon2.svg" alt="icon">
+    </div>
+
+    <div class="navVideo">
+        <p>Видеосерверы</p>
+        <p class="navNumber">12</p>
+        <a href="3-client.html"> <img class="navPic" src="./img/navIcon3.svg" alt="icon"></a>
+    </div>
+</div>
+
+<div class="cardTwo">
+    <img class="navIconTwo" src="./img/icon_navigation.svg" alt="userIcon">
+    <p class="navTextTwo">
+        Партнер 2</p>
+    
+    <div class="navDataTwo">
+        <p>Клиенты</p>
+        <p class="navNumberTwo">8</p>
+        <img class="navPicTwo" src="./img/navIcon1.svg" alt="icon">
+    </div>
+
+    <div class="navCameraTwo">
+        <p>Камеры</p>
+        <p class="navNumberTwo">78</p>
+        <img class="navPicTwo" src="./img/navIcon2.svg" alt="icon">
+    </div>
+
+    <div class="navVideoTwo">
+        <p>Видеосерверы</p>
+        <p class="navNumberTwo">35</p>
+        <a href="3-client.html"><img class="navPicTwo" src="./img/navIcon3.svg" alt="icon"></a>
+    </div>
+</div>
+</main>
+
+<!-- MODALS -->
+
+<div class="modal fade" id="notification" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+        <p class="modal-title" id="exampleModalLabel">Уведомления</p>
+        <p class="modal-title notification-title" id="exampleModalLabel">1 новый</p>
+        </div>
+        
+
+    <div class="notification-flex">
+        <div class="notification-img">
+            <img src="./img/msg.svg" alt="message">
+        </div>
+        <div class="notification-body">
+            Вы запросили доступ у Клиента 1
+        </div>
+
+        <div class="notification-date">
+            <p>12.03.2022</p>
+            <p>12:34</p>
+        </div>
+    </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger notification-btn" data-bs-dismiss="modal">Отменить запрос</button>
+        </div>
+        <hr class="modal-hr">
+        
+    <div class="notification-flex">
+        <div class="notification-img">
+            <img src="./img/msg.svg" alt="message">
+        </div>
+            <div class="notification-body">
+                Вы повторно запросили доступ у Клиента 1
+            </div>
+        <div class="notification-date">
+            <p>12.03.2022</p>
+            <p>12:34</p>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger notification-btn">Отменить запрос</button>
+    </div>
+        <hr class="modal-hr">
+
+    <div class="notification-flex">
+        <div class="notification-img">
+            <img src="./img/msg.svg" alt="message">
+        </div>
+        <div class="notification-body">
+            Клиент 1 предоставил доступ к личному кабинету
+        </div>
+        <div class="notification-date">
+                <p>12.03.2022</p>
+                <p>12:34</p>
+        </div>
+    </div>
+    
+         <hr class="modal-hr">
+    <div class="notification-flex">
+          <div class="notification-img">
+            <img src="./img/msg.svg" alt="message">
+          </div>
+          <div class="notification-body">
+            Клиент 1 остановил доступ
+          </div>
+
+          <div class="notification-date">
+            <p>12.03.2022</p>
+            <p>12:34</p>
+        </div>
+    </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success notification-btn" data-bs-dismiss="modal">Повторно запросить</button>
+            
+          </div>
+         <hr class="modal-hr">
+         <div class="notification-flex">
+          <div class="notification-img">
+            <img src="./img/msg.svg" alt="message">
+        </div>
+        <div class="notification-body">
+            Вы отклонили запрос на доступ к вашему личному кабинету
+          </div>
+          <div class="notification-date">
+            <p>12.03.2022</p>
+            <p>12:34</p>
+        </div>
+    </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

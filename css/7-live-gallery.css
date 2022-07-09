@@ -1,0 +1,310 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font:inherit;
+    vertical-align: baseline;
+    background-color: rgba(229, 229, 229, 0.2);
+    }
+    html{
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    }
+    html,
+    body {
+    height: 100%;
+    }
+    ul, li{
+    list-style: none;
+    }
+    a{
+    text-decoration: none;
+    color: black;
+    }
+    .alert{
+    background: url('https://cdn.glitch.global/c43e9ff0-0cd7-4d3d-8e87-7a0b1ab388ca/alert.svg?v=1657341048378') 5px 14px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    }
+    .alert::before{
+    content: "";
+    margin-left: 13px;
+    }
+    .ellipse{
+    position: relative;
+    bottom: 10px;
+    right: 105px;
+    }
+    .exit{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: #2C3854;
+    }
+    .navbar{
+    background-color: white;
+    }
+    
+    .breadcrumb{
+    margin-left: 72px;
+    margin-top: 40px;
+    }
+    .breadcrumb-text{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8F90A6;
+    }
+    .breadcrumb-info{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3377FF;
+    margin-left: 15px;
+    }
+    .input_button{
+    width: 450px;
+    height: 58px;
+    background: #FFFFFF;
+    border: 1px solid white;
+    box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+    border-radius: 30px;
+    margin-top: 48px;
+    margin-left: 62px;
+    margin-bottom: 32px;
+    }
+    .client_poisk_videoserver{
+    box-sizing: border-box;
+    width: 200px;
+    height: 42px;
+    background: #F4F7FE;
+    border: 1px solid #DDE5E9;
+    border-radius: 49px;
+    margin-top: 8px;
+    margin-left: 8px;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 10px;
+    border: 1px solid #9E9E9E;
+    background: url('https://cdn.glitch.global/c43e9ff0-0cd7-4d3d-8e87-7a0b1ab388ca/search_icon_blue.svg?v=1657341211947') no-repeat 16px 8px;
+    }
+    .client_poisk_videoserver::-webkit-input-placeholder{
+    padding-left: 34px;
+    } 
+    .client_poisk_videoserver::placeholder{
+    font-size: 14px;
+    }
+    .client_sozdanie_videoserver{
+    box-sizing: border-box;
+    margin-left: 8px;
+    padding: 9px 16px;
+    gap: 8px;
+    width: 223px;
+    height: 42px;
+    background: #3377FF;
+    border-radius: 49px;
+    border: none;
+    color: white;
+    background:#3377FF url('https://cdn.glitch.global/c43e9ff0-0cd7-4d3d-8e87-7a0b1ab388ca/plus_icon_white.svg?v=1657341449852') no-repeat 5px 9px;
+    }
+
+.pagination{
+display: flex;
+justify-content: center;
+/* margin-top: 244px; */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+text-align: center;
+color: #3377FF;
+        }
+    .blue{
+    width: 380px;
+    height: 42px;
+    background: #3377FF;
+    border-radius: 49px;
+    text-align: center;
+    margin-top: 20px;
+    }
+    .modal-content{
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 0;
+    }
+    .modal-body{
+    margin: 30px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #232325;
+    text-align: center;
+    }
+    .btn-close{
+    position: absolute;    
+    right: -10px; 
+    top: -15px; 
+    background: #F4F7FE;
+    border: 1px solid #DDE5E9;
+    border-radius: 30px;
+    }
+    .col-form-label{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3377FF;
+    }
+    .form-control{
+    background: #F4F7FE url('https://cdn.glitch.global/c43e9ff0-0cd7-4d3d-8e87-7a0b1ab388ca/user_icon.svg?v=1655535228901') no-repeat 16px 8px;
+    border: 1px solid #DDE5E9;
+    border-radius: 49px;
+    margin-top: 40px;
+    margin-left: 15px;
+    width: 380px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8F9BBA;
+    }
+    .form-control::-webkit-input-placeholder{
+    padding-left: 34px;
+    }
+    .btn-cancel, .btn-danger{
+    border-radius: 49px;
+    width: 178px;
+    height: 42px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 29px;
+    } 
+            
+    .modal-header{
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #3377FF;
+    border: none;
+    }
+    .modal-footer{
+    border: none;
+    margin: 0 auto;
+    }
+    .notification-info{
+    display: flex;
+    }
+    .notification-info-modal-body{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #232325;
+    }
+    .btn-close-access{
+    width: 120px;
+    height: 35px;
+    padding: 10px 12px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.366667px;
+    }
+    .notification-date{
+    width: 69px;
+    height: 42px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    color: #8F90A6;
+    margin-top: 25px;
+    }
+.live-event{
+    margin-left: 72px;
+    }
+.event{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #232325;
+    
+    }
+.event:hover{
+    text-decoration: underline;
+    
+    }
+.live:hover{
+    text-decoration: underline;
+    }
+.line{
+    border-bottom: 1px solid #EBEBF0;
+    width: 1296px;
+    margin-left: 72px;
+    }
+.arrow_menu{
+    
+    position: absolute;
+    right: 72px;
+    top: 257px;
+}
+
+.live-images{
+margin-left: 72px;
+margin-bottom: 32px;
+}
+.block{
+display: none;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+background: rgba(0, 0, 0, 0.5);
+border-radius: 0px 0px 8px 8px;
+width: 411px;
+height: 120px;
+padding: 20px;
+}
+.live-images:hover .block{
+    display: block;
+}
+

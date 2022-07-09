@@ -1,0 +1,114 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font:inherit;
+    vertical-align: baseline;
+}
+html{
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+html,
+body {
+    height: 100%;
+}
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: stretch;
+    min-height: 100%;
+    height: 100%;
+}
+.firstBloc__container, .secondBloc__container{
+    flex: 1;
+}
+.secondBloc__container {
+    background-image: url("https://cdn.glitch.global/c43e9ff0-0cd7-4d3d-8e87-7a0b1ab388ca/Image.svg?v=1655457357076");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 0px 0px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 230px 0 0 0;
+}
+.logo{
+width: 212px;
+height: 201px;
+}
+
+.blur{
+    width: 409px;
+    height: 109px;
+    background: rgba(217, 217, 217, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px 5px 0 5px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 42px 0 0 0;
+}
+
+
+.heading__container{
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 58px;
+letter-spacing: 0.2px;
+margin-bottom: 45px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 285px;
+    align-items: center;
+}
+.input__container_logIn{
+    background: #F4F7FE url('https://cdn.glitch.global/c43e9ff0-0cd7-4d3d-8e87-7a0b1ab388ca/user_icon.svg?v=1655535228901') no-repeat 16px 8px;
+    border: 1px solid #DDE5E9;
+    border-radius: 49px;
+    margin-bottom: 24px;
+    width: 379px;
+    height: 41px;
+    color: #8F9BBA;
+    font-size: 14px;
+    }
+    .input__container_password{
+    background: #F4F7FE url('https://cdn.glitch.global/c43e9ff0-0cd7-4d3d-8e87-7a0b1ab388ca/lock.svg?v=1655457347995') no-repeat 16px 8px;
+    border: 1px solid #DDE5E9;
+    border-radius: 49px;
+    margin-bottom: 24px;
+    width: 379px;
+    height: 41px;
+    color: #8F9BBA;
+    font-size: 14px;
+    }
+.input__container_logIn::-webkit-input-placeholder{
+    padding-left: 44px;
+} 
+
+.input__container_password::-webkit-input-placeholder{
+    padding-left: 44px;
+}
+.btn__logIn{
+width: 382px;
+height: 42px;   
+background: #3377FF;
+border-radius: 49px;
+border:none;
+color: #ffff;
+font-size: 14px;
+}
